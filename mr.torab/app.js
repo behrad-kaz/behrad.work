@@ -1,0 +1,3 @@
+function showVirtualKeyboard(){
+    alert("virtualkeyboard")
+}

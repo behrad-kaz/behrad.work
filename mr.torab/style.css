@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
+
+* {
+  font-family: "Vazirmatn", serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Vazirmatn", serif;
+  background-color: rgb(113, 217, 252);
+  height: 100vh;
+}
+.columm {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-items-center {
+  display: flex;
+  align-items: center;
+}
+.btns-inputs {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 6px 8px;
+  width: 100%;
+  font-size: 16px;
+}
+/* .navcontainer {
+  display: flex;
+  justify-content: center;
+  
+} */
+.matnshoro {
+  background-color: #02b4f491;
+  width: 500px;
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  font-size: 18px;
+}
+.moshakhase {
+  background-color: #02b4f491;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  gap: 20px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.logo-container {
+  justify-self: left;
+  height: 50px;
+  width: 50px;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.moarefi {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+}
+
+.form {
+  direction: rtl;
+  width: 500px;
+  height: 600px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  gap: 10px;
+  align-items: center;
+}
+.inputcontainer {
+  gap: 8px;
+}
+.dis-block {
+  display: block;
+}
+.army-img {
+  height: 150px;
+  width: auto;
+}
+.btn {
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  margin-top: 50px;
+}
+.btncontainer {
+  margin-top: 24px;
+}
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+.imgkeyboard{
+  position: absolute;
+  left: 10px;
+  width: 28px;
+  margin-top: 4px;
+}
+.passwordinputcontainer{
+  position: relative;
+
+  
+}

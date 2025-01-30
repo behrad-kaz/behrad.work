@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex-center">
+      <div class="matnshoro flex-center"><p>ستاد فرماندهی کل آجا</p></div>
+    </div>
+    <div class="moshakhase flex-center">
+      <div class="moarefi columm">
+        <p>اخرین فرد وارد شده :</p>
+        <p>مهدی تراب</p>
+      </div>
+      <div>
+        <img src="./images/user.png" alt="logo" class="logo" />
+      </div>
+    </div>
+    <div
+      class="form-container flex-center flex-items-center"
+      style="height: 90vh"
+    >
+      <form action="" class="form">
+        <div class="flex-center">
+          <img
+            src="./images/army.png"
+            alt="army-logo"
+            class="army-img"
+            style="margin-bottom: 24px"
+          />
+        </div>
+        <div class="inputcontainer columm">
+          <div>
+            <label>نام کاربری</label>
+            <input type="text" class="btns-inputs input" />
+          </div>
+          <div class="passwordinputcontainer">
+            <label>رمز عبور</label>
+            <input type="text" class="btns-inputs input" />
+            <img onclick="showVirtualKeyboard()" class="imgkeyboard" src="./images/keyboard-svgrepo-com.svg" alt="">
+          </div>
+        </div>
+        <div class="btncontainer">
+          <button class="btn btns-inputs" style="margin-top: 24px">ثبت</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
