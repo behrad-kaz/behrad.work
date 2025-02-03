@@ -12,9 +12,28 @@ body {
   background-color: rgb(113, 217, 252);
   height: 100vh;
 }
+.position-relative {
+  position: relative;
+}
+.fab-button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: white;
+}
+.fab-button:hover {
+  color: white;
+  background-color: #02b4f4;
+}
 .columm {
   display: flex;
   flex-direction: column;
+}
+.columm-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .flex {
   display: flex;
@@ -100,6 +119,10 @@ body {
   color: white;
   margin-top: 50px;
 }
+.btn:hover {
+  transition: 2s;
+  transform: scale(1.03, 1.03);
+}
 .btncontainer {
   margin-top: 24px;
 }
@@ -107,14 +130,39 @@ label {
   display: block;
   margin-bottom: 4px;
 }
-.imgkeyboard{
+.imgkeyboard {
   position: absolute;
   left: 10px;
   width: 28px;
   margin-top: 4px;
 }
-.passwordinputcontainer{
-  position: relative;
+.tooltip {
+  display: none;
+  padding: 6px 12px;
+  position: absolute;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 10;
+  top: 50px; /* Adjust the position as needed */
+  left: 10px; /* Adjust the position as needed */
+}
 
-  
+.passwordinputcontainer {
+  position: relative;
+}
+.fab-container {
+  position: absolute;
+  gap: 8px;
+  bottom: 32px;
+  z-index: 2;
+  right: -32px;
+  width: 50px;
+  height: 150px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.simple-keyboard {
+  max-width: 850px;
 }

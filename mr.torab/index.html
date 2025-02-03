@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css"
+    />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
     <title>Document</title>
   </head>
   <body>
@@ -21,10 +28,10 @@
       </div>
     </div>
     <div
-      class="form-container flex-center flex-items-center"
+      class="form-container flex-center flex-items-center position-relative"
       style="height: 90vh"
     >
-      <form action="" class="form">
+      <form action="" class="form position-relative">
         <div class="flex-center">
           <img
             src="./images/army.png"
@@ -41,11 +48,36 @@
           <div class="passwordinputcontainer">
             <label>رمز عبور</label>
             <input type="text" class="btns-inputs input" />
-            <img onclick="showVirtualKeyboard()" class="imgkeyboard" src="./images/keyboard-svgrepo-com.svg" alt="">
+            <img
+              onclick="showVirtualKeyboard()"
+              class="imgkeyboard"
+              src="./images/keyboard-svgrepo-com.svg"
+              alt="Virtual Keyboard"
+              id="keyboardImg"
+            />
+            <div id="tooltip" class="tooltip">
+              <div class="simple-keyboard"></div>
+            </div>
           </div>
         </div>
         <div class="btncontainer">
           <button class="btn btns-inputs" style="margin-top: 24px">ثبت</button>
+          <div class="fab-container columm-center">
+            <a href="mailto:amirbehradkaz@gmail.com">
+              <button type="button" class="fab-button">
+                <span class="material-icons">mail</span>
+              </button>
+            </a>
+            <a href="tel:09392195310">
+              <button type="button" class="fab-button">
+                <span class="material-icons">call</span>
+              </button>
+            </a>
+
+            <button class="fab-button">
+              <span class="material-icons">download</span>
+            </button>
+          </div>
         </div>
       </form>
     </div>
