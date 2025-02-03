@@ -6,14 +6,14 @@ function showVirtualKeyboard() {
 let Keyboard = window.SimpleKeyboard.default;
 
 let keyboard = new Keyboard({
-  onChange: input => onChange(input),
-  onKeyPress: button => onKeyPress(button)
+  onChange: (input) => onChange(input),
+  onKeyPress: (button) => onKeyPress(button),
 });
 
 /**
  * Update simple-keyboard when input is changed directly
  */
-document.querySelector(".input").addEventListener("input", event => {
+document.querySelector(".input").addEventListener("input", (event) => {
   keyboard.setInput(event.target.value);
 });
 
@@ -38,6 +38,28 @@ function handleShift() {
   let shiftToggle = currentLayout === "default" ? "shift" : "default";
 
   keyboard.setOptions({
-    layoutName: shiftToggle
+    layoutName: shiftToggle,
   });
 }
+
+function generateCaptcha() {
+  let captcha = Math.random().toString(36).substring(2, 7);
+  document.getElementById("captcha-text").innerText = captcha;
+  sessionStorage.setItem("captcha", captcha);
+}
+
+function validateCaptcha(event) {
+  let userInput = document.getElementById("captcha-input").value;
+  let storedCaptcha = sessionStorage.getItem("captcha");
+
+  if (userInput !== storedCaptcha) {
+    event.preventDefault();
+    alert("کد کپچا اشتباه است.");
+    generateCaptcha();
+  }
+}
+
+// Generate captcha on page load
+// window.onload = generateCaptcha();
+generateCaptcha();
+  

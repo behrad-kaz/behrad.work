@@ -118,6 +118,7 @@ body {
   background-color: rgb(0, 140, 255);
   color: white;
   margin-top: 50px;
+  margin: 10px;
 }
 .btn:hover {
   transition: 2s;
@@ -165,4 +166,9 @@ label {
 
 .simple-keyboard {
   max-width: 850px;
+}
+.captcha-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }

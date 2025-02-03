@@ -15,9 +15,8 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="flex-center">
-      <div class="matnshoro flex-center"><p>ستاد فرماندهی کل آجا</p></div>
-    </div>
+    <header-section title="ستاد فرماندهی آجا"></header-section>
+
     <div class="moshakhase flex-center">
       <div class="moarefi columm">
         <p>اخرین فرد وارد شده :</p>
@@ -59,9 +58,28 @@
               <div class="simple-keyboard"></div>
             </div>
           </div>
+
+          <div class="captcha-container">
+            <div>
+              <span id="captcha-text"></span>
+              <button type="button" onclick="generateCaptcha()">🔄</button>
+            </div>
+            <input
+              type="text"
+              id="captcha-input"
+              class="btns-inputs input"
+              placeholder="کد را وارد کنید"
+            />
+          </div>
         </div>
         <div class="btncontainer">
-          <button class="btn btns-inputs" style="margin-top: 24px">ثبت</button>
+          <button
+            class="btn btns-inputs"
+            style="margin-top: 24px"
+            onclick="validateCaptcha(event)"
+          >
+            ثبت
+          </button>
           <div class="fab-container columm-center">
             <a href="mailto:amirbehradkaz@gmail.com">
               <button type="button" class="fab-button">
@@ -82,6 +100,7 @@
       </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+    <script type="module" src="./components/HeaderSection.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
